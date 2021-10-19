@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    margin: 0px 40px;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 10px 120px;
+    flex-direction: column;
+}
+
+.header .htext {
+    font-size: 24px;
+    justify-content:  space-between;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    
+}
+
+ul {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .content {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0px;
+    flex: 1 1 0;
+}
+
+.content .ctext {
+    height: 100%;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+    padding: 0px 40px 20px 0px;
+}
+
+.ctext .main {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.ctext .secondary {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ctext .buttons {
+    width: fit-content;
+    background-color: #3882f6;
+    padding: 8px 35px;
+    border-radius: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content .image {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.information {
+    margin-bottom: 100px;
+}
+
+.information .title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .container {
+    display: flex;
+    margin: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+}
+
+.info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3882f6;
+    margin-bottom: 10px;
+}

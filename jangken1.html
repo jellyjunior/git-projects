@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        let myScore = 0;
+        let computerScore = 0;
+
+      function game() {
+        let input = prompt("Rock, paper, scissors?");
+        let myArray = ["rock", "paper", "scissors"];
+        let playerSelection = input.toLowerCase();
+        let computerSelection = myArray[Math.floor(Math.random() * myArray.length)]
+
+        if (
+          playerSelection == "rock" && computerSelection == "paper" ||
+          playerSelection == "paper" && computerSelection == "scissors" ||
+          playerSelection == "scissors" && computerSelection == "rock"
+        ) {
+          alert("Computer scores.");
+          computerScore = computerScore + 1;
+          alert("You: " + myScore + "    Computer: " + computerScore)
+        }
+         else if (
+           playerSelection == "rock" && computerSelection == "scissors" ||
+           playerSelection == "scissors" && computerSelection == "paper" ||
+           playerSelection == "paper" && computerSelection == "rock" 
+         ) {
+           alert("You score.");
+           myScore = myScore + 1;
+           alert("You: " + myScore + "    Computer: " + computerScore)
+           
+         }
+         else if (playerSelection == computerSelection) {
+           alert("It`s a tie!");
+           alert("You: " + myScore + "    Computer: " + computerScore)
+         }
+      }
+
+      game();
+
+      game();
+
+      game();
+
+      game();
+
+      game();
+      
+      if (myScore > computerScore) {
+        alert("You win!");
+      }
+      else if (myScore < computerScore) {
+        alert("You lost. Try again.");
+      }
+      else if (myScore == computerScore) {
+        alert("It's a tie! Refresh page for a tie breaker.");
+      }
+  
+
+     
+    </script>
+    
+    
+  </head>
+
+  <body>
+
+    
+
+  </body>
+  
+
+</html>
